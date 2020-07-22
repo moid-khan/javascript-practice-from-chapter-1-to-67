@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url("fonts/Merriweather-Bold.ttf");
+}
+
+.header-top {
+  background-color: #2655e8;
+  color: #ffffff;
+}
+
+.header-top .row {
+  padding-top: 12px;
+}
+
+div.col-h {
+  text-align: center;
+}
+
+button {
+  height: 30px;
+  border: 1px solid #111111;
+  font-size: 12px;
+  color: gray;
+}
+
+.col-h ul li {
+  list-style: none;
+  display: inline;
+  padding: 12px;
+}
+
+.col-h ul li i {
+  font-size: 13px;
+}
+
+.whatsap-icon {
+  width: 18px;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+li.active {
+  border-radius: 50px;
+  width: 80px;
+  text-align: center;
+  background-color: #2655e8;
+}
+
+li.active .nav-link {
+  color: #ffffff !important;
+}
+
+.nav-item:hover {
+  border-radius: 50px;
+  text-align: center;
+  background-color: #2655e8;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-item:hover .nav-link {
+  color: #ffffff !important;
+}
+.text-start {
+  color: #2655e8;
+  font-family: Merriweather;
+}
+
+.text-end {
+  margin-left: -10px;
+  color: #427900;
+  font-family: Merriweather;
+}
+
+.md-sec {
+  background-color: #2655e8;
+  color: #ffffff;
+  font-family: Merriweather;
+}
+
+.img-data {
+  height: 40px;
+}
+
+.month-tag {
+  color: #00ff00;
+}
+
+.num-heading {
+  font-size: 15px;
+}
+
+.services-heading h2 {
+  color: #2655e8;
+  font-family: Merriweather;
+}
+
+.services-heading h2 span {
+  color: #427900;
+  font-family: Merriweather;
+}
+
+.card-title {
+  font-family: Merriweather;
+  color: #2655e8;
+}
+
+.card-title h4 {
+  font-size: 18px;
+}
+
+.mission-heading {
+  font-family: Merriweather;
+  color: #2655e8;
+}
+
+.line {
+  height: 2px;
+  width: 50px;
+  background-color: #427900;
+}
+
+.icon-box {
+  height: 80px;
+  background-color: #f7f8fa;
+  border: 1px solid #eeeeee;
+}
+
+.box-body {
+  margin-top: -25px;
+}
+
+.box-body h4 {
+  font-size: 18px;
+  color: #2655e8;
+  font-family: Merriweather;
+}
+
+.img-left {
+  margin-top: 18px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer {
+  background-color: #25272e;
+  color: #bbbbbb;
+  font-size: 14px;
+}
+
+.footer ul li {
+  list-style: none;
+  padding: 3px;
+}
+
+.footer i {
+  padding-right: 3px;
+  color: #427900;
+}
+
+.footer strong {
+  font-family: Merriweather;
+  color: #ffffff;
+}
+
+.social ul li {
+  display: inline;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.social ul li i {
+  color: #ffffff;
+  background-color: #2655e8;
+  padding: 10px;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.footer-bottom {
+  background-color: #2655e8;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.footer-bottom span {
+  padding: 10px;
+}
+
+/* For Responsive */
+@media only screen and (max-width: 800px) {
+  .header-top {
+    height: 150px;
+  }
+  .carousel {
+    margin-top: 200px;
+  }
+}

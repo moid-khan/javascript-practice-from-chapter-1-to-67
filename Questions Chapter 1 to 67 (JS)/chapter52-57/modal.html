@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Modal</title>
+    <style>
+        .format {
+
+            width: 250px;
+            height: 230px;
+
+        }
+
+
+        /* Modal starts */
+
+        /* The Modal (background) */
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 500;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        /* Modal Content (image) */
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        /* Add Animation - Zoom in the Modal */
+
+        .modal-open {
+            animation-name: zoomIn;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0)
+            }
+            to {
+                transform: scale(1)
+            }
+        }
+
+        .modal-close {
+            animation-name: zoomOut;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoomOut {
+            from {
+                transform: scale(1)
+            }
+            to {
+                transform: scale(0)
+            }
+        }
+
+
+
+        /* The Close Button */
+
+        .close {
+            position: absolute;
+            top: 50px;
+            right: 10%;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: normal;
+            transition: 0.3s;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* modal ends */
+    </style>
+</head>
+
+<body>
+
+    <!-- Modal work -->
+    <div id="modal" class="modal">
+        <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <h2>Hint:</h2>
+    <p>You can add and remove class like this</p>
+    <p>
+        var modal = document.getElementById('modal');
+    </p>
+    <ul>
+        <li>
+            modal.classList.add('modal-open')
+        </li>
+        <li>
+            modal.classList.remove('modal-close');
+        </li>
+    </ul>
+    <hr>
+
+    <ol>
+        <li>
+            Add modal.html style and html codes in your file
+        </li>
+        <li>
+            Create an array of all images paths.
+        </li>
+        <li>
+            Loop through array and display all images in browser using innerHTML.
+        </li>
+        <li>
+            Add onclick function on each image.
+        </li>
+        <li>
+            On image Function definition get modal using id and assign it to a variable,
+            <br> And on that variable
+            <ul>
+                <li>
+                    Add class 'modal-open'
+                </li>
+                <li>
+                    Remove class 'modal-close'
+                </li>
+                <li>
+                    Add style to display block
+                </li>
+                <li>
+                    Assign image path to src
+                </li>
+            </ul>
+        </li>
+        <li>
+
+            On Modal Close Function definition "onClosedImagModal()" get modal using id and assign it to a variable,
+            <br> And on that variable
+            <ul>
+                <li>
+                    Add class 'modal-close'
+                </li>
+                <li>
+                    Remove class 'modal-open'
+                </li>
+                <li>
+                    Set this line in end of function
+                    <br /> setTimeout(()=>{ modal.style.display = "none"; }, 550)
+                </li>
+        </li>
+    </ol>
+
+</body>
+
+</html>

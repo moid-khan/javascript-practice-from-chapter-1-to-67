@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Assignment 09</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      img {
+        height: 150px;
+        cursor: pointer;
+      }
+
+      .modal {
+        margin: 0 auto;
+        height: 75%;
+        width: 70%;
+        margin-left: 15%;
+        margin-top: -60px;
+        position: absolute;
+        display: none;
+        cursor: pointer;
+      }
+
+      #btnClose {
+        font-family: sans-serif;
+        display: inline;
+        cursor: pointer;
+        display: none;
+      }
+
+      #modalImage {
+        height: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="btnClose" onclick="closeModal()">X</p>
+    <div class="images">
+      <img src="images/4.png" onclick="getImage(this)" alt="image" />
+      <img src="images/6.jpg" onclick="getImage(this)" alt="image" />
+      <img src="images/5.jpg" onclick="getImage(this)" alt="image" />
+      <img src="images/7.png" onclick="getImage(this)" alt="image" />
+    </div>
+
+    <div class="modal" id="modal">
+      <img src="" id="modalImage" alt="" />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
